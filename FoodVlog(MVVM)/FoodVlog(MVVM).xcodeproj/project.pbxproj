@@ -13,6 +13,18 @@
 		9D8BA2B4285A728E0039E263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA2B2285A728E0039E263 /* Main.storyboard */; };
 		9D8BA2B6285A728E0039E263 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA2B5285A728E0039E263 /* Assets.xcassets */; };
 		9D8BA2B9285A728E0039E263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA2B7285A728E0039E263 /* LaunchScreen.storyboard */; };
+		9D8BA2C1285A73590039E263 /* GoogleService-Info-3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA2C0285A73590039E263 /* GoogleService-Info-3.plist */; };
+		9D8BA2C4285A740D0039E263 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9D8BA2C3285A740D0039E263 /* FirebaseFirestore */; };
+		9D8BA2C6285A740D0039E263 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9D8BA2C5285A740D0039E263 /* FirebaseFirestoreSwift */; };
+		9D8BA2C8285A740D0039E263 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9D8BA2C7285A740D0039E263 /* FirebaseStorage */; };
+		9D8BA2D2285A763D0039E263 /* Vlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA2D1285A763D0039E263 /* Vlog.swift */; };
+		9D8BA2D4285A79F70039E263 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA2D3285A79F70039E263 /* DateHelper.swift */; };
+		9D8BA2D6285A7A860039E263 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA2D5285A7A860039E263 /* FirebaseService.swift */; };
+		9D8BA2D8285A7D5C0039E263 /* VlogListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA2D7285A7D5C0039E263 /* VlogListTableViewController.swift */; };
+		9D8BA2DA285A7D770039E263 /* VlogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA2D9285A7D770039E263 /* VlogListViewModel.swift */; };
+		9D8BA2DC285A7D9C0039E263 /* VlogListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA2DB285A7D9C0039E263 /* VlogListTableViewCell.swift */; };
+		9D8BA2DE285A7DB90039E263 /* VlogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA2DD285A7DB90039E263 /* VlogDetailViewController.swift */; };
+		9D8BA2E0285A7DD00039E263 /* VlogDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA2DF285A7DD00039E263 /* VlogDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +36,15 @@
 		9D8BA2B5285A728E0039E263 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D8BA2B8285A728E0039E263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D8BA2BA285A728E0039E263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D8BA2C0285A73590039E263 /* GoogleService-Info-3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-3.plist"; sourceTree = "<group>"; };
+		9D8BA2D1285A763D0039E263 /* Vlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vlog.swift; sourceTree = "<group>"; };
+		9D8BA2D3285A79F70039E263 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		9D8BA2D5285A7A860039E263 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		9D8BA2D7285A7D5C0039E263 /* VlogListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlogListTableViewController.swift; sourceTree = "<group>"; };
+		9D8BA2D9285A7D770039E263 /* VlogListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlogListViewModel.swift; sourceTree = "<group>"; };
+		9D8BA2DB285A7D9C0039E263 /* VlogListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlogListTableViewCell.swift; sourceTree = "<group>"; };
+		9D8BA2DD285A7DB90039E263 /* VlogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlogDetailViewController.swift; sourceTree = "<group>"; };
+		9D8BA2DF285A7DD00039E263 /* VlogDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VlogDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D8BA2C4285A740D0039E263 /* FirebaseFirestore in Frameworks */,
+				9D8BA2C6285A740D0039E263 /* FirebaseFirestoreSwift in Frameworks */,
+				9D8BA2C8285A740D0039E263 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				9D8BA2AB285A728E0039E263 /* FoodVlog(MVVM) */,
+				9D8BA2CA285A74E60039E263 /* Storyboard  */,
 				9D8BA2AA285A728E0039E263 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +81,79 @@
 		9D8BA2AB285A728E0039E263 /* FoodVlog(MVVM) */ = {
 			isa = PBXGroup;
 			children = (
+				9D8BA2C0285A73590039E263 /* GoogleService-Info-3.plist */,
+				9D8BA2D0285A758D0039E263 /* Models */,
+				9D8BA2CF285A75790039E263 /* Helper Files */,
+				9D8BA2CE285A75690039E263 /* Views */,
 				9D8BA2AC285A728E0039E263 /* AppDelegate.swift */,
 				9D8BA2AE285A728E0039E263 /* SceneDelegate.swift */,
 				9D8BA2B0285A728E0039E263 /* ViewController.swift */,
-				9D8BA2B2285A728E0039E263 /* Main.storyboard */,
-				9D8BA2B5285A728E0039E263 /* Assets.xcassets */,
-				9D8BA2B7285A728E0039E263 /* LaunchScreen.storyboard */,
 				9D8BA2BA285A728E0039E263 /* Info.plist */,
 			);
 			path = "FoodVlog(MVVM)";
+			sourceTree = "<group>";
+		};
+		9D8BA2CA285A74E60039E263 /* Storyboard  */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BA2B7285A728E0039E263 /* LaunchScreen.storyboard */,
+				9D8BA2B5285A728E0039E263 /* Assets.xcassets */,
+				9D8BA2B2285A728E0039E263 /* Main.storyboard */,
+			);
+			path = "Storyboard ";
+			sourceTree = "<group>";
+		};
+		9D8BA2CB285A75150039E263 /* Detail VIew */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BA2DD285A7DB90039E263 /* VlogDetailViewController.swift */,
+				9D8BA2DF285A7DD00039E263 /* VlogDetailViewModel.swift */,
+			);
+			path = "Detail VIew";
+			sourceTree = "<group>";
+		};
+		9D8BA2CC285A75450039E263 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BA2DB285A7D9C0039E263 /* VlogListTableViewCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		9D8BA2CD285A75570039E263 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BA2D7285A7D5C0039E263 /* VlogListTableViewController.swift */,
+				9D8BA2D9285A7D770039E263 /* VlogListViewModel.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		9D8BA2CE285A75690039E263 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BA2CD285A75570039E263 /* HomeView */,
+				9D8BA2CC285A75450039E263 /* Custom Cell */,
+				9D8BA2CB285A75150039E263 /* Detail VIew */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9D8BA2CF285A75790039E263 /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BA2D3285A79F70039E263 /* DateHelper.swift */,
+				9D8BA2D5285A7A860039E263 /* FirebaseService.swift */,
+			);
+			path = "Helper Files";
+			sourceTree = "<group>";
+		};
+		9D8BA2D0285A758D0039E263 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BA2D1285A763D0039E263 /* Vlog.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +172,11 @@
 			dependencies = (
 			);
 			name = "FoodVlog(MVVM)";
+			packageProductDependencies = (
+				9D8BA2C3285A740D0039E263 /* FirebaseFirestore */,
+				9D8BA2C5285A740D0039E263 /* FirebaseFirestoreSwift */,
+				9D8BA2C7285A740D0039E263 /* FirebaseStorage */,
+			);
 			productName = "FoodVlog(MVVM)";
 			productReference = 9D8BA2A9285A728E0039E263 /* FoodVlog(MVVM).app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +205,9 @@
 				Base,
 			);
 			mainGroup = 9D8BA2A0285A728E0039E263;
+			packageReferences = (
+				9D8BA2C2285A740D0039E263 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 9D8BA2AA285A728E0039E263 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +225,7 @@
 				9D8BA2B9285A728E0039E263 /* LaunchScreen.storyboard in Resources */,
 				9D8BA2B6285A728E0039E263 /* Assets.xcassets in Resources */,
 				9D8BA2B4285A728E0039E263 /* Main.storyboard in Resources */,
+				9D8BA2C1285A73590039E263 /* GoogleService-Info-3.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +236,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D8BA2D4285A79F70039E263 /* DateHelper.swift in Sources */,
 				9D8BA2B1285A728E0039E263 /* ViewController.swift in Sources */,
+				9D8BA2DA285A7D770039E263 /* VlogListViewModel.swift in Sources */,
+				9D8BA2D8285A7D5C0039E263 /* VlogListTableViewController.swift in Sources */,
+				9D8BA2DC285A7D9C0039E263 /* VlogListTableViewCell.swift in Sources */,
+				9D8BA2D2285A763D0039E263 /* Vlog.swift in Sources */,
 				9D8BA2AD285A728E0039E263 /* AppDelegate.swift in Sources */,
+				9D8BA2DE285A7DB90039E263 /* VlogDetailViewController.swift in Sources */,
+				9D8BA2E0285A7DD00039E263 /* VlogDetailViewModel.swift in Sources */,
+				9D8BA2D6285A7A860039E263 /* FirebaseService.swift in Sources */,
 				9D8BA2AF285A728E0039E263 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +403,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +432,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,6 +468,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9D8BA2C2285A740D0039E263 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D8BA2C3285A740D0039E263 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D8BA2C2285A740D0039E263 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		9D8BA2C5285A740D0039E263 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D8BA2C2285A740D0039E263 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		9D8BA2C7285A740D0039E263 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D8BA2C2285A740D0039E263 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D8BA2A1285A728E0039E263 /* Project object */;
 }
