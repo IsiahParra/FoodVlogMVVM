@@ -6,17 +6,17 @@
 //
 
 import Foundation
-protocol LogListViewModelDelegate: AnyObject {
+protocol VlogListViewModelDelegate: AnyObject {
     func vlogsLoadedSuccessfully()
 }
 
-class LogListViewModel {
+class VlogListViewModel {
     
     var vlogs: [Vlog] = []
     private var service: FirebaseSyncable
-    private weak var delegate: LogListViewModelDelegate?
+    private weak var delegate: VlogListViewModelDelegate?
     //dependency injection
-    init(delegate: LogListViewModelDelegate, service: FirebaseSyncable = FirebaseService()) {
+    init(delegate: VlogListViewModelDelegate, service: FirebaseSyncable = FirebaseService()) {
         self.delegate = delegate
         self.service = service
     }
@@ -33,7 +33,7 @@ class LogListViewModel {
         }
     }
     func delete(index: Int) {
-        let vlog = vlogs(index)
+        let vlog = vlogs[index]
         vlogs.remove(at: index)
         service.delete(vlog: vlog)
     }

@@ -18,24 +18,37 @@ class VlogDetailViewModel {
         self.service = service
     }
     
-    func saveVlog(with name: String, entry: String, location: String, image: UIImage) {
+    func saveVlog(with name: String, entry: String, location: String, image: UIImage?, completion: @escaping () -> Void) {
         if vlog != nil {
-            updateVlog(with: name, entry: entry, location: location, image: image)
+            
+            updateVlog(with: name, entry: entry, location: location, image: image){
+                completion()
+            }
         } else {
             self.vlog = Vlog(name: name, location: location, entry: entry)
-            service.save(vlog: self.vlog!, with: image)
+            
+            guard let image = image else {
+                return
+            }
+
+            service.save(vlog: self.vlog!, with: image){
+                // saving is finished
+                completion()
+            }
         }
     }
     
-    private func updateVlog(with name: String, entry: String, location: String, image: UIImage) {
-        
+    private func updateVlog(with name: String, entry: String, location: String, image: UIImage?, completion: @escaping () -> Void) {
+    
         guard let vlog = vlog else {
             return
         }
         vlog.name = name
         vlog.entry = entry
         vlog.location = location
-        service.save(vlog: vlog, with: image)
+        service.save(vlog: vlog, with: image) {
+        completion()
+        }
     }
     
     func getImage(completion: @escaping (UIImage?) -> Void) {

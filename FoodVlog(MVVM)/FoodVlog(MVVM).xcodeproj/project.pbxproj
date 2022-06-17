@@ -13,7 +13,7 @@
 		9D8BA2B4285A728E0039E263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA2B2285A728E0039E263 /* Main.storyboard */; };
 		9D8BA2B6285A728E0039E263 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA2B5285A728E0039E263 /* Assets.xcassets */; };
 		9D8BA2B9285A728E0039E263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA2B7285A728E0039E263 /* LaunchScreen.storyboard */; };
-		9D8BA2C1285A73590039E263 /* GoogleService-Info-3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA2C0285A73590039E263 /* GoogleService-Info-3.plist */; };
+		9D8BA2C1285A73590039E263 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA2C0285A73590039E263 /* GoogleService-Info.plist */; };
 		9D8BA2C4285A740D0039E263 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9D8BA2C3285A740D0039E263 /* FirebaseFirestore */; };
 		9D8BA2C6285A740D0039E263 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9D8BA2C5285A740D0039E263 /* FirebaseFirestoreSwift */; };
 		9D8BA2C8285A740D0039E263 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9D8BA2C7285A740D0039E263 /* FirebaseStorage */; };
@@ -36,7 +36,7 @@
 		9D8BA2B5285A728E0039E263 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D8BA2B8285A728E0039E263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D8BA2BA285A728E0039E263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D8BA2C0285A73590039E263 /* GoogleService-Info-3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-3.plist"; sourceTree = "<group>"; };
+		9D8BA2C0285A73590039E263 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9D8BA2D1285A763D0039E263 /* Vlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vlog.swift; sourceTree = "<group>"; };
 		9D8BA2D3285A79F70039E263 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		9D8BA2D5285A7A860039E263 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		9D8BA2AB285A728E0039E263 /* FoodVlog(MVVM) */ = {
 			isa = PBXGroup;
 			children = (
-				9D8BA2C0285A73590039E263 /* GoogleService-Info-3.plist */,
+				9D8BA2C0285A73590039E263 /* GoogleService-Info.plist */,
 				9D8BA2D0285A758D0039E263 /* Models */,
 				9D8BA2CF285A75790039E263 /* Helper Files */,
 				9D8BA2CE285A75690039E263 /* Views */,
@@ -225,7 +225,7 @@
 				9D8BA2B9285A728E0039E263 /* LaunchScreen.storyboard in Resources */,
 				9D8BA2B6285A728E0039E263 /* Assets.xcassets in Resources */,
 				9D8BA2B4285A728E0039E263 /* Main.storyboard in Resources */,
-				9D8BA2C1285A73590039E263 /* GoogleService-Info-3.plist in Resources */,
+				9D8BA2C1285A73590039E263 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

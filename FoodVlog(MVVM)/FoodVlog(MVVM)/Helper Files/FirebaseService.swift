@@ -11,7 +11,7 @@ import FirebaseStorage
 import UIKit
 
 protocol FirebaseSyncable {
-    func save(vlog: Vlog, with image: UIImage)
+    func save(vlog: Vlog, with image: UIImage?, completion: @escaping () -> Void)
     func loadVlogs(callback: @escaping (Result<[Vlog], FirebaseError>) -> Void)
     func delete(vlog: Vlog)
     func saveImage(_ image: UIImage, to vlog: Vlog, completion: @escaping () -> Void)
@@ -29,9 +29,15 @@ struct FirebaseService: FirebaseSyncable {
     let reference = Firestore.firestore()
     let storage = Storage.storage().reference()
     
-    func save(vlog: Vlog, with image: UIImage) {
-        saveImage(image, to: vlog) {
+    func save(vlog: Vlog, with image: UIImage?,completion: @escaping () -> Void) {
+        if let image = image {
+            saveImage(image, to: vlog) {
+                reference.collection(Vlog.Key.collectionType).document(vlog.uuid).setData(vlog.vlogData)
+                completion()
+            }
+        } else {
             reference.collection(Vlog.Key.collectionType).document(vlog.uuid).setData(vlog.vlogData)
+            completion()
         }
     }
     
@@ -55,8 +61,9 @@ struct FirebaseService: FirebaseSyncable {
     }
     
     func saveImage(_ image: UIImage, to vlog: Vlog, completion: @escaping () -> Void) {
-        guard let imageData = image.pngData() else {return}
-        storage.child("images").child(vlog.uuid).putData(imageData, metadata: nil) { _, error in
+        guard let imageData = image.jpegData(compressionQuality: 0.5)
+        else {return}
+        storage.child("images").child(vlog.uuid).putData(imageData, metadata: nil) { response, error in
             if let error = error {
                 print(error.localizedDescription)
                 completion()

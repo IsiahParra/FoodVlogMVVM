@@ -8,16 +8,15 @@
 import UIKit
 
 class VlogListTableViewCell: UITableViewCell {
+    @IBOutlet weak var foodNameLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func configureCell(with vlog: Vlog){
+        foodNameLabel.text = vlog.name
+        locationLabel.text = vlog.location
+        dateLabel.text = vlog.date.stringValue()
+        
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "22-cen-june-summergrilling-hpcontentsquare._TTW_._CR0,13,1414,1414_._SR1000,1000_._QL100_.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "gettyimages-665380564-170667a.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
