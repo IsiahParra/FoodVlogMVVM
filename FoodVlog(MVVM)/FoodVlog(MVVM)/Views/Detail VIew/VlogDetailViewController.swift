@@ -35,6 +35,7 @@ class VlogDetailViewController: UIViewController,   UINavigationControllerDelega
         }
         
     }
+    
     @objc func imageViewTapped() {
         let picker = UIImagePickerController()
         picker.sourceType = .photoLibrary
